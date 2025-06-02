@@ -14,6 +14,89 @@
 
 [บันทึกบทสนทนา]
 
+1. การรัน Node
+- คำสั่งรัน node: geth --datadir . --networkid 4444 --http --http.api eth,net,web3,personal --http.corsdomain "*" --http.port 8545 --unlock 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 --allow-insecure-unlock --mine --miner.etherbase 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 --password password.txt
+
+2. การเป็น Validator Node
+- ระบบ Reward
+- การคำนวณ Performance
+- การตั้งค่า Parameter
+- การ Monitor
+- การ Claim Reward
+
+3. ความต้องการพื้นฐานของ HEECHAIN
+- ระบบปฏิบัติการ: Windows, Linux, macOS (64-bit)
+- CPU: 2 cores (ขั้นต่ำ), 4 cores (แนะนำ), 8 cores (validator)
+- RAM: 4GB (ขั้นต่ำ), 8GB (แนะนำ), 16GB (validator)
+- Storage: 100GB (ขั้นต่ำ), 500GB (แนะนำ), SSD
+- Network: 10Mbps (ขั้นต่ำ), 100Mbps (แนะนำ), Static IP (validator)
+
+4. การปรับแต่งสำหรับ Raspberry Pi
+- Light Node Mode
+- ปรับแต่ง Genesis Block
+- ปรับแต่ง System
+- ปรับแต่ง Storage
+- ปรับแต่ง Network
+- ปรับแต่ง Monitoring
+- ปรับแต่ง Performance
+- ปรับแต่ง Security
+- ปรับแต่ง Backup
+- ปรับแต่ง Logging
+
+5. ระบบ Reward
+- Block Reward: 1 HEE ต่อ block
+- Epoch Reward: 100 HEE ต่อ epoch
+- Staking Reward: 5% ต่อปี
+- Performance Bonus: 10% สำหรับ performance 95% ขึ้นไป
+
+6. การ Monitor
+- Block Production
+- Missed Blocks
+- Rewards
+- Performance
+- Network Health
+
+7. การ Claim Reward
+- Manual Claim
+- Auto Claim
+- Claim Period: 24 ชั่วโมง
+- Max Claim Amount: 10,000 HEE
+- Claim Fee: 0.001 HEE
+
+8. การ Slash
+- Double Sign: 100% ของ stake
+- Offline: 10% ของ reward
+- Malicious Behavior: 100% ของ stake และ reward
+
+9. การตั้งค่า Parameter
+- Staking Parameters
+- Reward Parameters
+- Performance Parameters
+- Claim Parameters
+- Slashing Parameters
+
+10. การ Monitor แบบ Real-time
+- Block Production
+- Missed Blocks
+- Rewards
+- Performance
+- Network Health
+
+11. การ Claim แบบอัตโนมัติ
+- Auto Claim
+- Min Claim Amount
+- Max Claim Amount
+- Claim Interval
+- Recipient
+
+12. การใช้งานทั้งหมด
+- Initialize Monitor
+- Set Auto Claim
+- Start Auto Claim
+- Monitor Performance
+
+[จบบันทึกบทสนทนา]
+
 - เริ่มต้นสร้าง HEECHAIN โดย fork BSC, ตั้งค่า genesis, deploy contract, และ config Metamask
 - พบปัญหา balance, การ import key, การ unlock, และการ reset chain หลายรอบ
 - มีการแก้ไข genesis.json ให้เป็น POA Clique ที่ถูกต้อง
